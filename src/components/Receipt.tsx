@@ -144,14 +144,14 @@ export default function Receipt({ data }: ReceiptProps) {
       {/* CUSTOMER INFO */}
       <div style={{ padding: '12px 0', fontSize: '12px', lineHeight: '1.6', color: '#1f2937', borderBottom: '1px solid #f3f4f6' }}>
         <div>
-          <span style={{ color: '#6b7280' }}>👤 Pelanggan:</span>{' '}
+          <span style={{ color: '#6b7280', fontWeight: 600 }}>Pelanggan:</span>{' '}
           <strong style={{ color: '#111827' }}>{nama}</strong>
         </div>
         <div style={{ wordBreak: 'break-word' }}>
-          <span style={{ color: '#6b7280' }}>📍 Alamat:</span> {alamat}
+          <span style={{ color: '#6b7280', fontWeight: 600 }}>Alamat:</span> {alamat}
         </div>
         <div>
-          <span style={{ color: '#6b7280' }}>📞 Kontak:</span> {kontak}
+          <span style={{ color: '#6b7280', fontWeight: 600 }}>Kontak:</span> {kontak}
         </div>
         {estimasi ? (
           <div style={{ marginTop: '2px' }}>
