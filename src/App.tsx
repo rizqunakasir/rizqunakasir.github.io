@@ -911,10 +911,10 @@ export default function App() {
             </table>
           </div>
           <div style="padding:10px 0;font-size:11px;line-height:1.6;border-bottom:1px solid #f3f4f6;color:#1f2937;">
-            <div>👤 Pelanggan: <strong>${receiptData.nama}</strong></div>
-            <div>📍 Alamat: ${receiptData.alamat}</div>
-            <div>📞 Kontak: ${receiptData.kontak}</div>
-            ${receiptData.estimasi ? `<div>📅 Estimasi PO: <strong>${new Date(receiptData.estimasi).toLocaleDateString('id-ID', {day:'numeric',month:'long',year:'numeric'})}</strong></div>` : ''}
+            <div><strong>Pelanggan:</strong> <strong>${receiptData.nama}</strong></div>
+            <div><strong>Alamat:</strong> ${receiptData.alamat}</div>
+            <div><strong>Kontak:</strong> ${receiptData.kontak}</div>
+            ${receiptData.estimasi ? `<div><strong>Estimasi PO:</strong> <strong>${new Date(receiptData.estimasi).toLocaleDateString('id-ID', {day:'numeric',month:'long',year:'numeric'})}</strong></div>` : ''}
           </div>
           <div style="padding:10px 0;">
             <table style="width:100%;border-collapse:collapse;font-size:11px;">
