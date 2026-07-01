@@ -2083,8 +2083,8 @@ export default function App() {
     <div className={`min-h-screen flex flex-col bg-panel-bg text-slate-800 font-sans selection:bg-accent/25 selection:text-slate-900 ${isDarkMode ? 'dark' : ''}`}>
       {/* HEADER SECTION */}
       <header className="bg-gradient-to-br from-primary to-secondary text-white shadow-md sticky top-0 z-40 transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
+        <div className="w-full px-4 md:px-6 h-16 flex items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
             {storeLogoState && storeLogoState !== 'ts.png' && storeLogoState.startsWith('data:') ? (
               <img
                 src={storeLogoState}
@@ -2247,8 +2247,8 @@ export default function App() {
       )}
 
       {showInstallBanner && (
-        <div className="max-w-7xl w-full mx-auto px-4 md:px-6 pt-4 animate-fadeIn">
-          <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-2xl p-5 border border-white/10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-5">
+          <div className="w-full px-4 md:px-6 pt-4 animate-fadeIn">
+            <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-2xl p-5 border border-white/10 shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-5">
             {/* Ambient glows */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-accent/15 rounded-full filter blur-3xl pointer-events-none -mr-20 -mt-20"></div>
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-sky-500/10 rounded-full filter blur-2xl pointer-events-none -ml-16 -mb-16"></div>
@@ -2299,8 +2299,8 @@ export default function App() {
       )}
 
       {/* CORE FRAME CONTAINER */}
-      <main className="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 overflow-hidden">
-        {activeTab === 'pos' && (
+        <main className="flex-1 w-screen px-6 py-6 overflow-hidden">
+          {activeTab === 'pos' && (
           <div className="space-y-4 w-full">
             {editingTransactionId && (
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 flex items-center justify-between shadow-sm animate-fadeIn">
@@ -4024,9 +4024,9 @@ export default function App() {
       </main>
 
       <footer className="bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 py-6 text-center text-xs border-t border-slate-200 dark:border-slate-850 select-none">
-        <div className="max-w-7xl mx-auto px-4 space-y-1">
-          <p className="font-semibold text-slate-600 dark:text-slate-400">Copyright &copy; 2026 {storeNameState}. All rights reserved.</p>
-          <p className="text-[10px] text-slate-400 dark:text-slate-500">Sistem POS Kasir Pintar · Developed by Teguh Sulistyawan</p>
+          <div className="w-full px-4 space-y-1">
+            <p className="font-semibold text-slate-600 dark:text-slate-400">Copyright &copy; 2026 {storeNameState}. All rights reserved.</p>
+          <p className="text-[10px] text-slate-400 dark:text-slate-500">Sistem POS Kasir Pintar · Developed by Kang Media</p>
         </div>
       </footer>
 
